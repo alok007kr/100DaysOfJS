@@ -1,0 +1,14 @@
+// Day3: In this we have to count number of given character in a word
+
+let word = 'MissIssipi'
+let arrWord = word.split("")
+let count = 0;
+
+for(let element of arrWord){
+  if(element == "i" || element == "I"){
+    count++;
+  }
+}
+
+console.log(count)
+
