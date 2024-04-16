@@ -1,0 +1,20 @@
+// DAY-2: We have to hash a string and make uppercase to first letter of all words and join them
+
+let value = 'i am alok kumar'
+
+let arrVal = value.split(" ")
+arrVal.unshift('#')
+
+var empArr = [];
+
+arrVal.forEach((element,index,array) => {
+  element = element.charAt(0).toUpperCase() + element.slice(1)
+  empArr.push(element)
+  // console.log(element)
+})
+console.log(empArr)
+
+
+var strArr = empArr.toString()
+let fArr = strArr.replaceAll(",", "")
+console.log(fArr)
