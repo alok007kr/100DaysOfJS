@@ -1,0 +1,16 @@
+// Day 5 : Sort an array in ascending order
+
+sortAscending([2,98,79,56,9,73])
+
+function sortAscending(value){
+  for(let i=0;i<value.length;i++){
+    for(let j=i+1;j<value.length;j++){
+      if(value[i] > value[j]){
+        var temp = value[i];
+        value[i] = value[j];
+        value[j] = temp;
+      }
+    }
+  }
+  console.log(value)
+}
