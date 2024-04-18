@@ -1,7 +1,7 @@
 //Day6 : Check palindrome
 
 console.log(checkPalindrome("racecsr"))
-
+//Op = false
 
 function checkPalindrome(value){
   //console.log(value.length)
