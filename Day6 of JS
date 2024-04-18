@@ -1,0 +1,17 @@
+//Day6 : Check palindrome
+
+console.log(checkPalindrome("racecsr"))
+
+
+function checkPalindrome(value){
+  //console.log(value.length)
+  let totalLength = value.length;
+  let len = (value.length)/2
+  
+  for(let i=0;i<len;i++){
+    if(value[i] != value[totalLength-1-i]){
+      return false;
+    }
+  }
+  return true;
+}
