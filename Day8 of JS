@@ -1,0 +1,16 @@
+// Day8 : Find factorial
+
+console.log(findFactorial(8))
+
+function findFactorial(num){
+ if(num == 0|| num == 1){
+  return 1;
+}
+else{
+var ans = 1;
+for(let i=num;i>0;i--){
+ans = i*ans;
+}
+return ans;
+}
+}
