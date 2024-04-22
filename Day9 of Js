@@ -1,0 +1,15 @@
+// Day9: Function takes array as input band returns average 
+
+console.log(findAverage([2,5,8,15]));
+
+
+function findAverage(value){
+  //console.log(value)
+  var sum = 0;
+  for(let i=0;i<value.length;i++){
+    sum = sum + value[i];
+  }
+  
+  let average = sum/(value.length);
+  return average;
+}
