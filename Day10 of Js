@@ -1,0 +1,17 @@
+//Day10: Comparing two arrays and return true if equal otherwise false
+// NOTE: Elements will be in same order
+
+console.log(areArraysEqual([1,2,4], [1,2,3]))
+
+
+function areArraysEqual(value1, value2){
+  // console.log(value1)
+  // console.log(value2)
+  
+  for(let i=0;i<value1.length;i++){
+    if(value1[i] != value2[i]){
+      return false;
+    }
+  }
+  return true;
+}
