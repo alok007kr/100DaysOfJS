@@ -1,0 +1,15 @@
+//Day11: Write a function to take input and return the sum of its digits
+
+
+console.log(sumOfDigits(1234))
+
+function sumOfDigits(value){
+  // console.log(value)
+  let sum = 0;
+  while(value > 0){
+    let lNum = value % 10;
+    sum = sum + lNum;
+    value = Math.round(value/10);
+  }
+  return sum;
+}
