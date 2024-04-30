@@ -1,0 +1,17 @@
+// Day13: write a function that takes string and return number of vowels from string 
+// console.log(countVowel(Hello there!, I am Alok kumar))
+var str = "Alok is a good guy"
+
+countVowel(str)
+
+function countVowel(str){
+  var count = 0;
+  // console.log(str.length)
+  for(let i=0;i<str.length;i++){
+    let value = str.charAt(i)
+    if(value == 'A' || value == 'E' || value == "I" || value == "O" || value == "U" || value == 'a' || value == 'e' || value =='i' || value == 'o' || value == 'u' ){
+      count++
+    }
+  }
+  console.log(count)
+}
