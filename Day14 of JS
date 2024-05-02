@@ -1,0 +1,12 @@
+//Day14: Write a function that takes as num as input and return true if the number will be PowerOfTwo
+console.log(isPowerOfTwo(256))
+
+function isPowerOfTwo(num){
+  for(let i=1;i<num;i++){
+    let value = Math.pow(2,i)
+    if(num == value){
+      return true;
+    }
+  }
+  return false;
+}
