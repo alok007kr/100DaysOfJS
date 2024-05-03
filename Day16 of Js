@@ -1,0 +1,17 @@
+// Day16: write a function that takes input as array and return minimum value of the array
+
+const arr = [4,2,6,7,2,8,1,-4]
+
+
+
+var min = arr[0];
+
+function findMin(arr) {
+  for(let i=0;i<arr.length;i++){
+    if(min > arr[i]){
+      min = arr[i]
+    }
+  }
+  return min;
+}
+console.log(findMin(arr))
