@@ -1,0 +1,23 @@
+// Day15: write a function that takes an array and return the sum of its value
+var arr = [1,2,3,4]
+
+
+// Changing the array to square root of the array
+// arr.forEach((element, index) => {
+//   arr[index] = Math.pow(element, 2)
+// })
+
+
+// // performing sum of elements in array using reduce method
+// const finalValue = arr.reduce((acc, ele) => 
+// acc + ele, 0
+// )
+
+// console.log(finalValue)
+
+
+// 2nd Method using reduce only
+const answer = arr.reduce((acc, ele) => 
+acc + Math.pow(ele,2), 0
+)
+console.log(answer)
