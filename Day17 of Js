@@ -1,0 +1,20 @@
+//Day17: write a function that converts a string into camelCase
+
+var str = 'click on run button'
+
+
+function camelCase(str){
+  // console.log(str)
+  var arrStr = str.split(' ')
+  arrStr.forEach((element, index, array) => {
+    let length = element.length;
+    let firstWord = element.charAt(0)
+    let lastWord = element.slice(1,length)
+    array[index] = firstWord.toUpperCase() + lastWord
+  })
+  // console.log(arrStr)
+  let strFmArr = arrStr.toString()
+  console.log(strFmArr.replaceAll(',', ''))
+}
+
+camelCase(str)
