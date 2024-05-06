@@ -1,0 +1,21 @@
+//Day18: write a function that takes a character and returns true if uppercase 
+
+
+const char = '$'
+
+
+function charCase(char){
+  // console.log(char)
+  let value = char.charCodeAt(0)
+  if(value > 64 && value < 90){
+    return 'upperCase'
+  }
+  else if(value > 96 && value < 122){
+    return 'lowerCase'
+  }
+  else {
+    return 'Error'
+  }
+}
+
+console.log(charCase(char))
