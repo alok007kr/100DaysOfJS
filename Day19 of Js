@@ -1,0 +1,20 @@
+//Day19: write a function that takes a string as input and return true if that string start with specific sub-string
+
+
+var string = "Hello there, How are you?"
+var word = 'Hello'
+
+
+console.log(checkString(string, word))
+
+function checkString(string, word){
+  // console.log(`${string} + ${word}`)
+  
+  let arrString = string.split(" ")
+  if(arrString[0] == word){
+    return true
+  }
+  else{
+    return false
+  }
+}
