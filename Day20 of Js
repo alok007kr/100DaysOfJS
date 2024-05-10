@@ -1,0 +1,18 @@
+// Day20: write a function that takes as string as input and reverse the string as output
+
+const value = "Hello"
+
+reverseString(value)
+
+
+function reverseString(value){
+  var array = []
+  for(let i=value.length;i>0;i--){
+    array.push(value.charAt(i-1))
+  }
+  let revStr = array.toString()
+  let fVal = revStr.replaceAll(',', '')
+  console.log(fVal)
+}
+
+// console.log(array)
