@@ -1,0 +1,19 @@
+//Day22 : Write a function that takes array as input and returns median
+// NOTE: IF EVEN NUMBER OF ELEMENTS THEN AVERAGE OF TWO MIDDLE VALUE & IF ODD THEN RETURN MIDDLE VALUE
+
+
+const arr = [2,4,7,1,6,9,5]
+
+console.log(medianValue(arr))
+
+function medianValue(arr){
+  let newArr = arr.sort()
+  let flag = Math.round((newArr.length)/2)
+  //check if array if odd or even
+  if(newArr%2 != 0){
+    return newArr[flag-1]
+  }
+  else{
+    return newArr[flag-2] + newArr[flag-1]
+  }
+}
