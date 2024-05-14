@@ -1,0 +1,22 @@
+//Day23: write a function that takes array as input and returns as a object key will be elment and value will be the count
+
+const arr = [3,6,5,8,3,6,6,3,5]
+
+console.log(countElements(arr))
+
+function countElements(arr){
+  //creation of object in javascript
+  let obj = new Object()
+  
+  for(let i=0;i<arr.length;i++){
+    let count = 0;
+   for(let j=0;j<arr.length;j++){
+     if(arr[i] == arr[j]){
+       count++
+     }
+   }
+   //Initialise the object 
+   obj[arr[i]] = count;
+  }
+  return obj;
+}
