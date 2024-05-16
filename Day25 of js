@@ -1,0 +1,16 @@
+//Day25: Write a function that takes number as input and return factorial of that number
+
+const num = 5;
+
+console.log(findFactorial(num))
+
+
+function findFactorial(num){
+  //Base case
+  if(num == 0 || num == 1){
+    return 1;
+  }
+  
+  // recursive call
+  return num * findFactorial(num-1)
+}
