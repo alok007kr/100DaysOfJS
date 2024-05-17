@@ -1,0 +1,20 @@
+//Day26: write a function to find nth factorial Number
+
+
+const nthNumber = 9
+
+
+console.log(findFactorial(nthNumber))
+
+function findFactorial(nthNumber){
+  //Base case 
+  if(nthNumber == 0){
+    return 0
+  }
+  if(nthNumber == 1){
+    return 1
+  }
+  
+  //recursion call
+  return findFactorial(nthNumber-1) + findFactorial(nthNumber-2)
+}
