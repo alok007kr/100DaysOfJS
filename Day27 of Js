@@ -1,0 +1,16 @@
+//Day27: Write a function that takes one string and a number as input and give output as repeat string that given number of times
+
+const str = 'Alok'
+const times = 5
+
+var newVal = str;
+console.log(repeatString(str, times))
+
+
+function repeatString(str, times){
+  // console.log(`${str} + ${times}`)
+  for(let i=0;i<times-1;i++){
+    newVal = newVal + str;
+  }
+  return newVal;
+}
